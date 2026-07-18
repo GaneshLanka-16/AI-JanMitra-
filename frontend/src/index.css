@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+
+html{
+  scroll-behavior:smooth;
+}
+
+
+body{
+  background:#f8fafc;
+  color:#0f172a;
+  overflow-x:hidden;
+}
+
+
+/* Glass UI */
+
+.glass{
+
+  background:rgba(255,255,255,0.65);
+
+  backdrop-filter:blur(20px);
+
+  border:1px solid rgba(255,255,255,0.4);
+
+}
+
+
+/* Gradient Text */
+
+.gradient-text{
+
+background:linear-gradient(
+90deg,
+#2563eb,
+#7c3aed
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+
+/* AI Glow */
+
+.ai-glow{
+
+box-shadow:
+0 0 40px rgba(124,58,237,0.25);
+
+}
+
+
+/* Card Hover */
+
+.card-hover{
+
+transition:all .3s ease;
+
+}
+
+
+.card-hover:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+0 20px 40px rgba(0,0,0,0.12);
+
+}
+
+
+/* Button */
+
+.primary-btn{
+
+background:
+linear-gradient(
+135deg,
+#2563eb,
+#7c3aed
+);
+
+color:white;
+
+padding:14px 30px;
+
+border-radius:14px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+
+.primary-btn:hover{
+
+transform:scale(1.05);
+
+box-shadow:
+0 10px 30px rgba(37,99,235,.35);
+
+}
+
+
+/* AI Background */
+
+.ai-background{
+
+background:
+
+radial-gradient(
+circle at top left,
+rgba(124,58,237,.15),
+transparent 40%
+),
+
+radial-gradient(
+circle at bottom right,
+rgba(37,99,235,.15),
+transparent 40%
+);
+
+}

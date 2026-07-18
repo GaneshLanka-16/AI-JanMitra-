@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "PM Kisan Samman Nidhi",
+    "category": "Farmer",
+    "benefit": "₹6000 financial assistance per year",
+    "eligibility": "Farmers owning cultivable land",
+    "documents": "Aadhaar Card, Land Records, Bank Passbook"
+  },
+  {
+    "id": 2,
+    "name": "Ayushman Bharat",
+    "category": "Health",
+    "benefit": "Health insurance up to ₹5 Lakhs",
+    "eligibility": "Eligible low-income families",
+    "documents": "Aadhaar Card, Ration Card"
+  },
+  {
+    "id": 3,
+    "name": "PM Vishwakarma",
+    "category": "Worker",
+    "benefit": "Skill training and financial assistance",
+    "eligibility": "Traditional artisans and craftsmen",
+    "documents": "Aadhaar Card, Identity Proof"
+  },
+  {
+    "id": 4,
+    "name": "National Scholarship",
+    "category": "Student",
+    "benefit": "Financial support for education",
+    "eligibility": "Eligible students meeting income criteria",
+    "documents": "Aadhaar Card, Income Certificate, Marksheets"
+  }
+]

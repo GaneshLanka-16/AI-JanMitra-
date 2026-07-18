@@ -26,7 +26,7 @@ export default function AadhaarUpload({ onData }) {
       setLoading(true);
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/ocr",
+        "https://your-render-url.onrender.com/ocr",
         formData,
         {
           headers: {

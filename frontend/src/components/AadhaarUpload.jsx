@@ -13,40 +13,39 @@ export default function AadhaarUpload({ onData }) {
   const [fileName, setFileName] = useState("");
 
   const handleUpload = async (e) => {
-    const file = e.target.files[0];
 
-    if (!file) return;
+  const file = e.target.files[0];
 
-    setFileName(file.name);
+  if (!file) return;
 
-    const formData = new FormData();
-    formData.append("file", file);
+  const formData = new FormData();
 
-    try {
-      setLoading(true);
+  formData.append("file", file);
 
-      const response = await axios.post(
-        "https://your-render-url.onrender.com/ocr",
-        formData,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        }
-      );
+  try {
 
-      if (response.data.success) {
-        onData(response.data.data);
-      } else {
-        alert("OCR Failed");
+    const response = await axios.post(
+      "https://ai-janmitra-jovw.onrender.com/ocr",
+      formData,
+      {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
       }
-    } catch (err) {
-      console.log(err);
-      alert("Unable to connect to OCR API");
-    }
+    );
 
-    setLoading(false);
-  };
+    console.log("OCR Response:", response.data);
+
+    onData(response.data.data);
+
+  } catch (error) {
+
+    console.error("OCR Error:", error);
+
+    alert("Unable to connect to OCR API.");
+
+  }
+};
 
   return (
     <div className="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden">

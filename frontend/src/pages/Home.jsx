@@ -1,216 +1,651 @@
 import { Link } from "react-router-dom";
+
 import {
-  Sparkles,
-  ShieldCheck,
-  BrainCircuit,
-  FileCheck2,
-  ArrowRight,
-} from "lucide-react";
+  FaRobot,
+  FaFileUpload,
+  FaSearch,
+  FaChartLine,
+  FaBrain,
+  FaShieldAlt,
+  FaUserLock
+} from "react-icons/fa";
+
 
 export default function Home() {
-  return (
-    <div className="min-h-screen bg-slate-50">
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-700 via-indigo-700 to-purple-700 text-white">
 
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top_right,white,transparent_60%)]"></div>
+return (
 
-        <div className="max-w-7xl mx-auto px-6 py-28 flex flex-col lg:flex-row items-center justify-between">
+<div className="page-animation">
 
-          <div className="max-w-2xl">
 
-            <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-lg px-4 py-2 rounded-full mb-6">
-              <Sparkles size={18} />
-              <span>AI Powered Government Assistant</span>
-            </div>
 
-            <h1 className="text-6xl font-black leading-tight">
-              AI Janmitra
-            </h1>
+{/* HERO SECTION */}
 
-            <p className="text-2xl mt-4 text-blue-100 font-medium">
-              Discover Government Schemes in Seconds using AI.
-            </p>
+<section className="
+min-h-[85vh]
+flex
+items-center
+">
 
-            <p className="mt-6 text-lg text-blue-100 leading-8">
-              Upload Aadhaar, verify eligibility, compare schemes,
-              chat with AI, and receive personalized recommendations
-              in one platform.
-            </p>
 
-            <div className="flex gap-4 mt-10">
+<div className="
+max-w-7xl
+mx-auto
+px-6
+grid
+md:grid-cols-2
+gap-12
+items-center
+">
 
-              <Link
-                to="/eligibility"
-                className="bg-white text-blue-700 px-7 py-4 rounded-xl font-bold flex items-center gap-2 hover:scale-105 transition"
-              >
-                Get Started
-                <ArrowRight size={20} />
-              </Link>
 
-              <Link
-                to="/chat"
-                className="border border-white px-7 py-4 rounded-xl font-bold hover:bg-white hover:text-blue-700 transition"
-              >
-                AI Assistant
-              </Link>
 
-            </div>
+{/* LEFT SIDE */}
 
-          </div>
+<div>
 
-          {/* Right Card */}
-          <div className="mt-16 lg:mt-0">
 
-            <div className="bg-white/15 backdrop-blur-xl rounded-3xl p-8 w-[360px] shadow-2xl border border-white/20">
 
-              <h3 className="text-2xl font-bold mb-6">
-                AI Analysis
-              </h3>
+<div className="
+inline-flex
+items-center
+gap-3
+bg-blue-100
+text-blue-700
+px-5
+py-2
+rounded-full
+font-semibold
+mb-6
+">
 
-              <div className="space-y-5">
 
-                <div className="flex justify-between">
-                  <span>Profile Match</span>
-                  <span className="font-bold text-green-300">
-                    95%
-                  </span>
-                </div>
+<FaRobot/>
 
-                <div className="w-full h-3 bg-white/20 rounded-full">
-                  <div className="h-3 bg-green-400 rounded-full w-[95%]"></div>
-                </div>
+AI Powered Government Assistant
 
-                <div className="mt-6">
 
-                  <div className="flex justify-between mb-2">
-                    <span>Eligible Schemes</span>
-                    <span>12</span>
-                  </div>
+</div>
 
-                  <div className="flex justify-between mb-2">
-                    <span>Verified Documents</span>
-                    <span>4</span>
-                  </div>
 
-                  <div className="flex justify-between">
-                    <span>AI Confidence</span>
-                    <span>98%</span>
-                  </div>
 
-                </div>
 
-              </div>
 
-            </div>
+<h1 className="
+text-5xl
+md:text-6xl
+font-black
+leading-tight
+">
 
-          </div>
 
-        </div>
+Discover Government Schemes
 
-      </section>
 
-      {/* Features */}
+<br/>
 
-      <section className="max-w-7xl mx-auto px-6 py-24">
 
-        <h2 className="text-4xl font-bold text-center mb-14">
-          Everything You Need
-        </h2>
+<span className="ai-text">
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+With Artificial Intelligence
 
-          <div className="bg-white rounded-3xl shadow-lg p-8 hover:-translate-y-2 transition">
+</span>
 
-            <BrainCircuit className="text-blue-600" size={42} />
 
-            <h3 className="text-xl font-bold mt-5">
-              AI Assistant
-            </h3>
+</h1>
 
-            <p className="mt-3 text-gray-600">
-              Ask questions in natural language and receive AI-powered answers.
-            </p>
 
-          </div>
 
-          <div className="bg-white rounded-3xl shadow-lg p-8 hover:-translate-y-2 transition">
 
-            <ShieldCheck className="text-green-600" size={42} />
 
-            <h3 className="text-xl font-bold mt-5">
-              Eligibility Check
-            </h3>
+<p className="
+mt-6
+text-lg
+text-gray-600
+leading-relaxed
+">
 
-            <p className="mt-3 text-gray-600">
-              Instantly discover government schemes you qualify for.
-            </p>
 
-          </div>
+AI Janmitra helps citizens find suitable
+government welfare schemes through AI-powered
+eligibility analysis, Aadhaar profile extraction,
+and personalized recommendations.
 
-          <div className="bg-white rounded-3xl shadow-lg p-8 hover:-translate-y-2 transition">
 
-            <FileCheck2 className="text-purple-600" size={42} />
+</p>
 
-            <h3 className="text-xl font-bold mt-5">
-              Aadhaar Verification
-            </h3>
 
-            <p className="mt-3 text-gray-600">
-              Upload documents and verify user information using OCR.
-            </p>
 
-          </div>
 
-          <div className="bg-white rounded-3xl shadow-lg p-8 hover:-translate-y-2 transition">
 
-            <Sparkles className="text-orange-500" size={42} />
 
-            <h3 className="text-xl font-bold mt-5">
-              Smart Recommendation
-            </h3>
+{/* BUTTONS */}
 
-            <p className="mt-3 text-gray-600">
-              AI suggests the most relevant schemes based on your profile.
-            </p>
 
-          </div>
+<div className="
+flex
+gap-5
+mt-8
+flex-wrap
+">
 
-        </div>
 
-      </section>
+<Link to="/login">
 
-      {/* Stats */}
+<button className="
+primary-btn
+flex
+items-center
+gap-2
+">
 
-      <section className="bg-blue-700 text-white py-20">
+<FaUserLock/>
 
-        <div className="max-w-6xl mx-auto grid md:grid-cols-4 text-center gap-10">
+Login
 
-          <div>
-            <h2 className="text-5xl font-black">500+</h2>
-            <p className="mt-2">Government Schemes</p>
-          </div>
+</button>
 
-          <div>
-            <h2 className="text-5xl font-black">36</h2>
-            <p className="mt-2">States Covered</p>
-          </div>
+</Link>
 
-          <div>
-            <h2 className="text-5xl font-black">AI</h2>
-            <p className="mt-2">Powered Recommendation</p>
-          </div>
 
-          <div>
-            <h2 className="text-5xl font-black">24×7</h2>
-            <p className="mt-2">Virtual Assistant</p>
-          </div>
 
-        </div>
 
-      </section>
 
-    </div>
-  );
+<Link to="/register">
+
+<button className="
+px-6
+py-3
+rounded-xl
+border
+border-blue-600
+text-blue-600
+font-semibold
+hover:bg-blue-50
+transition
+">
+
+Create Account
+
+</button>
+
+</Link>
+
+
+
+
+
+<Link to="/upload">
+
+
+<button className="
+px-6
+py-3
+rounded-xl
+bg-green-600
+text-white
+font-semibold
+flex
+items-center
+gap-2
+hover:bg-green-700
+transition
+">
+
+
+<FaFileUpload/>
+
+Upload Aadhaar
+
+
+</button>
+
+
+</Link>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+{/* RIGHT AI CARD */}
+
+
+<div>
+
+
+<div className="
+glass-card
+p-8
+">
+
+
+<div className="
+bg-gradient-to-r
+from-blue-600
+to-purple-600
+rounded-3xl
+p-8
+text-white
+">
+
+
+<FaBrain
+
+className="
+text-6xl
+mb-5
+"
+
+/>
+
+
+
+<h2 className="
+text-3xl
+font-bold
+">
+
+Janmitra AI
+
+</h2>
+
+
+
+<p className="
+mt-3
+opacity-90
+">
+
+Your intelligent assistant for
+government benefits.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div className="
+grid
+grid-cols-2
+gap-5
+mt-6
+">
+
+
+
+<StatCard
+
+number="1200+"
+
+text="Government Schemes"
+
+/>
+
+
+
+<StatCard
+
+number="36"
+
+text="States Covered"
+
+/>
+
+
+
+<StatCard
+
+number="50+"
+
+text="Ministries"
+
+/>
+
+
+
+<StatCard
+
+number="AI"
+
+text="Smart Analysis"
+
+/>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+{/* HOW IT WORKS */}
+
+
+<section className="
+py-20
+">
+
+
+<div className="
+max-w-6xl
+mx-auto
+px-6
+">
+
+
+<h2 className="
+text-4xl
+font-black
+text-center
+mb-12
+">
+
+
+How AI Janmitra Works
+
+
+</h2>
+
+
+
+
+
+<div className="
+grid
+md:grid-cols-3
+gap-8
+">
+
+
+
+<FeatureCard
+
+icon={<FaFileUpload/>}
+
+title="Upload Aadhaar"
+
+text="Extract user information securely using AI OCR technology."
+
+/>
+
+
+
+
+<FeatureCard
+
+icon={<FaSearch/>}
+
+title="AI Eligibility Check"
+
+text="Analyse user profile and match suitable government schemes."
+
+/>
+
+
+
+
+<FeatureCard
+
+icon={<FaChartLine/>}
+
+title="Smart Recommendations"
+
+text="Receive personalized schemes with reasons and required documents."
+
+/>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+{/* ABOUT AI SECTION */}
+
+
+<section className="
+pb-20
+">
+
+
+<div className="
+max-w-6xl
+mx-auto
+px-6
+">
+
+
+<div className="
+glass-card
+p-10
+text-center
+">
+
+
+<FaShieldAlt
+
+className="
+mx-auto
+text-5xl
+text-blue-600
+mb-5
+"
+
+/>
+
+
+
+<h2 className="
+text-3xl
+font-bold
+">
+
+Making Government Benefits Accessible
+
+</h2>
+
+
+
+<p className="
+mt-4
+text-gray-600
+max-w-3xl
+mx-auto
+">
+
+
+AI Janmitra combines Artificial Intelligence,
+FastAPI, OCR and Gemini AI to simplify access
+to welfare schemes for every citizen.
+
+
+</p>
+
+
+
+<Link to="/about">
+
+
+<button className="
+mt-6
+primary-btn
+">
+
+
+Know More About AI Janmitra
+
+
+</button>
+
+
+</Link>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+</div>
+
+);
+
+}
+
+
+
+
+
+
+
+function FeatureCard({icon,title,text}){
+
+
+return(
+
+<div className="
+glass-card
+p-7
+hover:-translate-y-2
+transition
+">
+
+
+<div className="
+text-blue-600
+text-4xl
+mb-5
+">
+
+{icon}
+
+</div>
+
+
+
+<h3 className="
+text-xl
+font-bold
+mb-3
+">
+
+{title}
+
+</h3>
+
+
+
+<p className="
+text-gray-600
+">
+
+{text}
+
+</p>
+
+
+
+</div>
+
+
+);
+
+
+}
+
+
+
+
+
+
+function StatCard({number,text}){
+
+
+return(
+
+<div className="
+bg-white
+shadow-md
+rounded-xl
+p-5
+text-center
+">
+
+
+<h3 className="
+text-3xl
+font-black
+text-blue-600
+">
+
+{number}
+
+</h3>
+
+
+<p className="
+text-gray-600
+mt-2
+">
+
+{text}
+
+</p>
+
+
+</div>
+
+);
+
+
 }

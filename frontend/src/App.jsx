@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 
 import Navbar from "./components/Navbar";
 
@@ -10,6 +11,7 @@ import Compare from "./pages/Compare";
 import Upload from "./pages/Upload";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import { askGemini } from "./services/gemini";
 
 
 export default function App(){
